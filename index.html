@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商城-主页面</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/slide.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/mainPage.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/slide.js" type="text/javascript"></script>
+    <script src="js/navChange.js" type="text/javascript"></script>
+</head>
+<body>
+<!-- 导航栏 -->
+<div class="site_header theme-white" id="site_header">
+    <div class="bg-white"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header_logo">
+                <a href="index.html" target="_parent">
+                    <img src="images/headerImg/coral-logo.png" style="height: 23px; width: 125px;">
+                </a>
+            </div>
+            <div class="header_nav">
+                <ul>
+                    <li class="nav-item" data-subNav="nav_iphone">
+                        <a href="phone.html" target="_parent">手机</a>
+                    </li>
+                    <li class="nav-item" data-subNav="nav_note_computer">
+                        <a href="note_computer.html" target="_parent">笔记本</a>
+                    </li>
+                    <li class="nav-item" data-subNav="nav_flat_computer">
+                        <a href="flat_computer.html" target="_parent">平板电脑</a>
+                    </li>
+                    <li class="nav-item" data-subNav="nav_voice">
+                        <a href="voice.html" target="_parent">声学</a>
+                    </li>
+                    <li class="nav-item" data-subNav="nav_parts">
+                        <a href="parts.html" target="_parent">智能配件</a>
+                    </li>
+                    <li class="nav-item" data-subNav="nav_life">
+                        <a href="lifes.html" target="_parent">生活</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header_search">
+                <form class="search_form">
+                    <input type="text" name="search_text" id="search_text" placeholder="小米8">
+                    <input type="submit" name="search_btn" id="search_btn" value="🔍">
+                </form>
+            </div>
+            <div class="header_user">
+                <div class="header_user_img">
+                    <a href="#">
+                        <img src="images/headerImg/shopping-cart-white.png" width="30" height="30">
+                    </a>
+                </div>
+                <div class="header_user_box">
+                    <!-- 登录前 -->
+                    <div class="header_user_before_login">
+                        <ul class="header_user_dropdown">
+                            <li>
+                                <a href="#" class="tc">立即登录</a>
+                            </li>
+                            <li>
+                                <a href="reg_phone.html">立即注册</a>
+                            </li>
+                            <li>
+                                <a href="#">我的订单</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_shop">
+                <a href="#">
+                    <img src="images/headerImg/icon-user-white.png" width="30" height="30">
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="sub-nav">
+        <div class="sub-nav_wrap" data-link="nav_iphone">
+            <ul>
+                <li>
+                    <a href="shop_detail.html">
+                        <img src="images/phoneImg/meizuNote8.jpg" alt="#">
+                        <span>魅族 Note8</span>
+                        <p>￥ 999</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/phoneImg/xiaomi8青春版.png" alt="#">
+                        <span>小米8 青春版</span>
+                        <p>￥2000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/phoneImg/meizuNote8.jpg" alt="#">
+                        <span>魅族 Note8</span>
+                        <p>￥ 999</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/phoneImg/xiaomi8青春版.png" alt="#">
+                        <span>小米8 青春版</span>
+                        <p>￥2000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/phoneImg/meizuNote8.jpg" alt="#">
+                        <span>魅族 Note8</span>
+                        <p>￥ 999</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/phoneImg/xiaomi8青春版.png" alt="#">
+                        <span>小米8 青春版</span>
+                        <p>￥ 2000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/phoneImg/meizuNote8.jpg" alt="#">
+                        <span>魅族 Note8</span>
+                        <p>￥ 999</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/phoneImg/xiaomi8青春版.png" alt="#">
+                        <span>小米8 青春版</span>
+                        <p>￥ 2000</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-nav_wrap" data-link="nav_note_computer">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/note_computerImg/xiaomi笔记本Pro.png" alt="#">
+                        <span>小米笔记本 Pro</span>
+                        <p>￥ 5000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/note_computerImg/xiaomi游戏笔记本small.png" alt="#">
+                        <span>小米游戏本</span>
+                        <p>￥ 7000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/note_computerImg/xiaomi笔记本Pro.png" alt="#">
+                        <span>小米笔记本 Pro</span>
+                        <p>￥ 5000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/note_computerImg/xiaomi游戏笔记本small.png" alt="#">
+                        <span>小米游戏本</span>
+                        <p>￥ 7000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/note_computerImg/xiaomi笔记本Pro.png" alt="#">
+                        <span>小米笔记本 Pro</span>
+                        <p>￥ 5000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/note_computerImg/xiaomi游戏笔记本small.png" alt="#">
+                        <span>小米游戏本</span>
+                        <p>￥ 7000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/note_computerImg/xiaomi笔记本Pro.png" alt="#">
+                        <span>小米笔记本 Pro</span>
+                        <p>￥ 5000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/note_computerImg/xiaomi游戏笔记本small.png" alt="#">
+                        <span>小米游戏本</span>
+                        <p>￥ 7000</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-nav_wrap" data-link="nav_voice">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/voiceImg/meizuHALO蓝牙耳机.jpg" alt="#">
+                        <span>HALO 激光蓝牙耳机</span>
+                        <p>￥ 400</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/voiceImg/meizuEP52蓝牙耳机.jpg" alt="#">
+                        <span>EP52 蓝牙运动耳机</span>
+                        <p>￥ 200</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/voiceImg/meizuHALO蓝牙耳机.jpg" alt="#">
+                        <span>HALO 激光蓝牙耳机</span>
+                        <p>￥ 400</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/voiceImg/meizuEP52蓝牙耳机.jpg" alt="#">
+                        <span>EP52 蓝牙运动耳机</span>
+                        <p>￥ 200</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/voiceImg/meizuHALO蓝牙耳机.jpg" alt="#">
+                        <span>HALO 激光蓝牙耳机</span>
+                        <p>￥ 400</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/voiceImg/meizuEP52蓝牙耳机.jpg" alt="#">
+                        <span>EP52 蓝牙运动耳机</span>
+                        <p>￥ 200</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/voiceImg/meizuHALO蓝牙耳机.jpg" alt="#">
+                        <span>HALO 激光蓝牙耳机</span>
+                        <p>￥ 400</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/voiceImg/meizuEP52蓝牙耳机.jpg" alt="#">
+                        <span>EP52 蓝牙运动耳机</span>
+                        <p>￥ 200</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-nav_wrap" data-link="nav_flat_computer">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/flat_computerImg/huawei平板M3.jpg" alt="#">
+                        <span>华为平板 M3</span>
+                        <p>￥ 2000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/flat_computerImg/xiaomi平板4.jpg" alt="#">
+                        <span>小米平板4</span>
+                        <p>￥ 1800</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/flat_computerImg/huawei平板M3.jpg" alt="#">
+                        <span>华为平板 M3</span>
+                        <p>￥ 2000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/flat_computerImg/xiaomi平板4.jpg" alt="#">
+                        <span>小米平板4</span>
+                        <p>￥ 1800</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/flat_computerImg/huawei平板M3.jpg" alt="#">
+                        <span>华为平板 M3</span>
+                        <p>￥ 2000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/flat_computerImg/xiaomi平板4.jpg" alt="#">
+                        <span>小米平板4</span>
+                        <p>￥ 1800</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/flat_computerImg/huawei平板M3.jpg" alt="#">
+                        <span>华为平板 M3</span>
+                        <p>￥ 2000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/flat_computerImg/xiaomi平板4.jpg" alt="#">
+                        <span>小米平板4</span>
+                        <p>￥ 1800</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-nav_wrap" data-link="nav_parts">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/partsImg/xiaomi音响.jpg" alt="#">
+                        <span>小米AI音响</span>
+                        <p>￥ 1000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/partsImg/xiaomi音响mimi.jpg" alt="#">
+                        <span>小米小爱蓝牙音响</span>
+                        <p>￥ 800</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/partsImg/xiaomi音响.jpg" alt="#">
+                        <span>小米AI音响</span>
+                        <p>￥ 1000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/partsImg/xiaomi音响mimi.jpg" alt="#">
+                        <span>小米小爱蓝牙音响</span>
+                        <p>￥ 800</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/partsImg/xiaomi音响.jpg" alt="#">
+                        <span>小米AI音响</span>
+                        <p>￥ 1000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/partsImg/xiaomi音响mimi.jpg" alt="#">
+                        <span>小米小爱蓝牙音响</span>
+                        <p>￥ 800</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/partsImg/xiaomi音响.jpg" alt="#">
+                        <span>小米AI音响</span>
+                        <p>￥ 1000</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/partsImg/xiaomi音响mimi.jpg" alt="#">
+                        <span>小米小爱蓝牙音响</span>
+                        <p>￥ 800</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sub-nav_wrap" data-link="nav_life">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="images/lifesImg/xiaomi双肩包.jpg" alt="#">
+                        <span>小米极限都市双肩包</span>
+                        <p>￥ 200</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lifesImg/meizu收纳包.jpg" alt="#">
+                        <span>魅族数码收纳包</span>
+                        <p>￥ 150</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lifesImg/xiaomi双肩包.jpg" alt="#">
+                        <span>小米极限都市双肩包</span>
+                        <p>￥ 200</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lifesImg/meizu收纳包.jpg" alt="#">
+                        <span>魅族数码收纳包</span>
+                        <p>￥ 150</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lifesImg/xiaomi双肩包.jpg" alt="#">
+                        <span>小米极限都市双肩包</span>
+                        <p>￥ 200</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lifesImg/meizu收纳包.jpg" alt="#">
+                        <span>魅族数码收纳包</span>
+                        <p>￥ 150</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lifesImg/xiaomi双肩包.jpg" alt="#">
+                        <span>小米极限都市双肩包</span>
+                        <p>￥ 200</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/lifesImg/meizu收纳包.jpg" alt="#">
+                        <span>魅族数码收纳包</span>
+                        <p>￥ 150</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--登录弹框  -->
+    <div id="gray"></div>
+    <div class="popup" id="popup">
+        <div class="top_nav" id='top_nav'>
+            <div align="center">
+                <a class="guanbi"></a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            //窗口效果
+            //点击登录class为tc 显示
+            $(".tc").click(function () {
+                $("#gray").show();
+                $("#popup").show();//查找ID为popup的DIV show()显示#gray
+                tc_center();
+            });
+            //点击关闭按钮
+            $("a.guanbi").click(function () {
+                $("#gray").hide();
+                $("#popup").hide();//查找ID为popup的DIV hide()隐藏
+            })
+
+            //窗口水平居中
+            $(window).resize(function () {
+                tc_center();
+            });
+
+            function tc_center() {
+                var _top = ($(window).height() - $(".popup").height()) / 2;
+                var _left = ($(window).width() - $(".popup").width()) / 2;
+
+                $(".popup").css({top: _top, left: _left});
+            }
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $(".top_nav").mousedown(function (e) {
+                    $(this).css("cursor", "move");//改变鼠标指针的形状
+                    var offset = $(this).offset();//DIV在页面的位置
+                    var x = e.pageX - offset.left;//获得鼠标指针离DIV元素左边界的距离
+                    var y = e.pageY - offset.top;//获得鼠标指针离DIV元素上边界的距离
+                    $(document).bind("mousemove", function (ev) { //绑定鼠标的移动事件，因为光标在DIV元素外面也要有效果，所以要用doucment的事件，而不用DIV元素的事件
+
+                        $(".popup").stop();//加上这个之后
+
+                        var _x = ev.pageX - x;//获得X轴方向移动的值
+                        var _y = ev.pageY - y;//获得Y轴方向移动的值
+
+                        $(".popup").animate({left: _x + "px", top: _y + "px"}, 10);
+                    });
+
+                });
+
+                $(document).mouseup(function () {
+                    $(".popup").css("cursor", "default");
+                    $(this).unbind("mousemove");
+                });
+            })
+        </script>
+        <div class="login-title">
+            <a class="loginTitle-left actived">帐号登录</a>
+            <a class="loginTitle-right splitLine">手机号登录</a>
+        </div>
+        <div id="account">
+            <div class="login-form">
+                <div class="userAccountLogin"></div>
+                <table class="table-style">
+                    <tbody>
+                    <tr>
+                        <td class="user-input">
+                            <input type="text" class="text vam" maxlength="50" placeholder="请输入商城账号">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="user-input">
+                            <input type="password" class="text vam" maxlength="32" placeholder="密码">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mt-links">
+                            <input type="button" class="button button-login" value="登录">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="login-form">
+                <div class="userAccountLogin"></div>
+                <table class="table-style">
+                    <tbody>
+                    <tr>
+                        <td class="user-input">
+                            <input type="text" class="text vam" maxlength="50" placeholder="请输入手机号">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="user-input">
+                            <input type="password" class="text vam" maxlength="32" placeholder="密码">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="mt-links">
+                            <input type="button" class="button button-login" value="登录">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--登录弹框end -->
+</div>
+<!-- 导航栏End -->
+<!-- 轮播大图 -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".slideInner").slide({
+            slideContainer: $('.slideInner a'),
+            effect: 'easeOutCirc',
+            autoRunTime: 2000,
+            slideSpeed: 1000,
+            nav: true,
+            autoRun: true,
+            prevBtn: $('a.prev'),
+            nextBtn: $('a.next')
+        });
+    });
+</script>
+<div class="slideBox" id="slideBox">
+    <div class="slides">
+        <div class="slideInner" style="left: -300%;">
+            <a href="shop_detail.html" style="position: absolute; left: 0%;
+           margin-left: 0px;" data-index="1" class="active">
+                <img src="images/img/meizuHALO耳机.jpg">
+            </a>
+            <a href="shop_detail.html" style="position: absolute; left: 100%;"
+               data-index="2" class="">
+                <img src="images/img/meizu15手机.jpg">
+            </a>
+            <a href="shop_detail.html" style="position: absolute; left: 200%;"
+               data-index="3" class="">
+                <img src="images/img/meizu16手机1.jpg">
+            </a>
+            <a href="shop_detail.html" style="position: absolute; left: 300%;"
+               data-index="4" class="">
+                <img src="images/img/meizu16手机2.jpg">
+            </a>
+            <a href="shop_detail.html" style="position: absolute; left: 400%;"
+               data-index="5" class="">
+                <img src="images/img/meizuX8手机.jpg">
+            </a>
+            <a href="shop_detail.html" style="position: absolute; left: 500%;"
+               data-index="6" class="">
+                <img src="images/img/meizuFlow耳机.jpg">
+            </a>
+        </div>
+        <div class="nav" style="display: none;">
+            <a class="prev" href="javascript:;"></a>
+            <a class="next" href="javascript:;"></a>
+        </div>
+    </div>
+</div>
+<!-- 轮播大图End -->
+<div class="index_container">
+    <div class="site_index">
+        <!-- 热门推荐 -->
+        <div class="section_box" id="setion_box_recommend">
+            <div class="section_title">
+                <h3>热门推荐</h3>
+            </div>
+            <div class="section_box_adv">
+                <a href="#"><img src="images/img/meizuEP52-Lite蓝牙耳机.jpg"></a>
+            </div>
+            <div class="section_box_center">
+                <ul class="section_ul_row" style="margin-left: 0">
+                    <li class="section_li_line">
+                        <div class="section-item-box">
+                            <a class="box-img" href="">
+                                <img class="goods-img goods-set-img" src="images/img/meizu休闲双肩包.jpg">
+                                <span class="box-info box-ad-info">
+                                      <span class="goods-name">魅蓝 休闲旅行双肩包</span>
+                                      <span class="goods-desc">曲面一体式 多功能隔层 极简与线条之美</span>
+                                      <span class="goods-price">
+                                          <em>￥169</em><s>￥199</s>
+                                      </span>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <ul class="section_ul_row" style="clear: both">
+                    <li class="section_li_line">
+                        <div class="section-item-box">
+                            <a class="box-img" href="">
+                                <img class="goods-img goods-set-img" src="images/img/meizu休闲双肩包.jpg">
+                                <span class="box-info box-ad-info">
+                                      <span class="goods-name">魅蓝 休闲旅行双肩包</span>
+                                      <span class="goods-desc">曲面一体式 多功能隔层 极简与线条之美</span>
+                                      <span class="goods-price">
+                                          <em>￥169</em><s>￥199</s>
+                                      </span>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 热门推荐End -->
+        <!-- 手机 -->
+        <div class="section_box" id="setion_box_phone">
+            <div class="section_title">
+                <h3>手机</h3>
+            </div>
+            <div class="section_box_adv">
+                <a href="#"><img src="images/img/meizuEP52-Lite蓝牙耳机.jpg"></a>
+            </div>
+            <div class="section_box_center">
+                <ul class="section_ul_row" style="margin-left: 0">
+                    <li class="section_li_line">
+                        <div class="section-item-box">
+                            <a class="box-img" href="">
+                                <img class="goods-img goods-set-img" src="images/img/meizu休闲双肩包.jpg">
+                                <span class="box-info box-ad-info">
+                                      <span class="goods-name">魅蓝 休闲旅行双肩包</span>
+                                      <span class="goods-desc">曲面一体式 多功能隔层 极简与线条之美</span>
+                                      <span class="goods-price">
+                                          <em>￥169</em><s>￥199</s>
+                                      </span>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <ul class="section_ul_row" style="clear: both">
+                    <li class="section_li_line">
+                        <div class="section-item-box">
+                            <a class="box-img" href="">
+                                <img class="goods-img goods-set-img" src="images/img/meizu休闲双肩包.jpg">
+                                <span class="box-info box-ad-info">
+                                      <span class="goods-name">魅蓝 休闲旅行双肩包</span>
+                                      <span class="goods-desc">曲面一体式 多功能隔层 极简与线条之美</span>
+                                      <span class="goods-price">
+                                          <em>￥169</em><s>￥199</s>
+                                      </span>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 手机End -->
+        <!-- 电脑 -->
+        <div class="section_box" id="setion_box_computer">
+            <div class="section_title">
+                <h3>电脑</h3>
+            </div>
+            <div class="section_box_adv">
+                <a href="#"><img src="images/img/meizuEP52-Lite蓝牙耳机.jpg"></a>
+            </div>
+            <div class="section_box_center">
+                <ul class="section_ul_row" style="margin-left: 0">
+                    <li class="section_li_line">
+                        <div class="section-item-box">
+                            <a class="box-img" href="">
+                                <img class="goods-img goods-set-img" src="images/img/meizu休闲双肩包.jpg">
+                                <span class="box-info box-ad-info">
+                                      <span class="goods-name">魅蓝 休闲旅行双肩包</span>
+                                      <span class="goods-desc">曲面一体式 多功能隔层 极简与线条之美</span>
+                                      <span class="goods-price">
+                                          <em>￥169</em><s>￥199</s>
+                                      </span>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <ul class="section_ul_row" style="clear: both">
+                    <li class="section_li_line">
+                        <div class="section-item-box">
+                            <a class="box-img" href="">
+                                <img class="goods-img goods-set-img" src="images/img/meizu休闲双肩包.jpg">
+                                <span class="box-info box-ad-info">
+                                      <span class="goods-name">魅蓝 休闲旅行双肩包</span>
+                                      <span class="goods-desc">曲面一体式 多功能隔层 极简与线条之美</span>
+                                      <span class="goods-price">
+                                          <em>￥169</em><s>￥199</s>
+                                      </span>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 电脑End -->
+        <!-- 智能配件 -->
+        <div class="section_box" id="setion_box_parts">
+            <div class="section_title">
+                <h3>智能配件</h3>
+            </div>
+            <div class="section_box_adv">
+                <a href="#"><img src="images/img/meizuEP52-Lite蓝牙耳机.jpg"></a>
+            </div>
+            <div class="section_box_center">
+                <ul class="section_ul_row" style="margin-left: 0">
+                    <li class="section_li_line">
+                        <div class="section-item-box">
+                            <a class="box-img" href="">
+                                <img class="goods-img goods-set-img" src="images/img/meizu休闲双肩包.jpg">
+                                <span class="box-info box-ad-info">
+                                      <span class="goods-name">魅蓝 休闲旅行双肩包</span>
+                                      <span class="goods-desc">曲面一体式 多功能隔层 极简与线条之美</span>
+                                      <span class="goods-price">
+                                          <em>￥169</em><s>￥199</s>
+                                      </span>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <ul class="section_ul_row" style="clear: both">
+                    <li class="section_li_line">
+                        <div class="section-item-box">
+                            <a class="box-img" href="">
+                                <img class="goods-img goods-set-img" src="images/img/meizu休闲双肩包.jpg">
+                                <span class="box-info box-ad-info">
+                                      <span class="goods-name">魅蓝 休闲旅行双肩包</span>
+                                      <span class="goods-desc">曲面一体式 多功能隔层 极简与线条之美</span>
+                                      <span class="goods-price">
+                                          <em>￥169</em><s>￥199</s>
+                                      </span>
+                                </span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                    <li class="section_li_line">
+                        <dl>
+                            <dt>
+                                <a href="#"><img class="section_img" src="images/phoneImg/meizu16th-Plus.png"></a>
+                            </dt>
+                            <dd class="section_dd_name">
+                                <a href="#">魅族 16th Plus</a>
+                            </dd>
+                            <dd class="section_dd_price">骁龙845 屏幕下指纹</dd>
+                            <dd class="section_dd_good">￥2988</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 智能配件End -->
+        <!-- 精彩视频 -->
+        <div class="section_box_video" id="section_box_video">
+            <div class="section_title">
+                <h3>精彩视频</h3>
+            </div>
+            <div class="section_box_center">
+                <ul class="video_ul_row" style="margin-left: 0">
+                    <li class="video_li_line">
+                        <dl>
+                            <dt>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <i class="video_player"></i>
+                                </a>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <img class="video_img_point" src="images/img/meizuEP52-Lite-gray-蓝牙耳机.jpg">
+                                </a>
+                                <p>魅族 EP52 Lite 蓝牙运动耳机</p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="video_li_line">
+                        <dl>
+                            <dt>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <i class="video_player"></i>
+                                </a>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <img class="video_img_point" src="images/img/meizuEP52-Lite-gray-蓝牙耳机.jpg">
+                                </a>
+                                <p>魅族 EP52 Lite 蓝牙运动耳机</p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="video_li_line">
+                        <dl>
+                            <dt>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <i class="video_player"></i>
+                                </a>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <img class="video_img_point" src="images/img/meizuEP52-Lite-gray-蓝牙耳机.jpg">
+                                </a>
+                                <p>魅族 EP52 Lite 蓝牙运动耳机</p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="video_li_line">
+                        <dl>
+                            <dt>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <i class="video_player"></i>
+                                </a>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <img class="video_img_point" src="images/img/meizuEP52-Lite-gray-蓝牙耳机.jpg">
+                                </a>
+                                <p>魅族 EP52 Lite 蓝牙运动耳机</p>
+                            </dt>
+                        </dl>
+                    </li>
+                </ul>
+                <ul class="video_ul_row" style="clear: both">
+                    <li class="video_li_line">
+                        <dl>
+                            <dt>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <i class="video_player"></i>
+                                </a>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <img class="video_img_point" src="images/img/meizuEP52-Lite-gray-蓝牙耳机.jpg">
+                                </a>
+                                <p>魅族 EP52 Lite 蓝牙运动耳机</p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="video_li_line">
+                        <dl>
+                            <dt>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <i class="video_player"></i>
+                                </a>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <img class="video_img_point" src="images/img/meizuEP52-Lite-gray-蓝牙耳机.jpg">
+                                </a>
+                                <p>魅族 EP52 Lite 蓝牙运动耳机</p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="video_li_line">
+                        <dl>
+                            <dt>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <i class="video_player"></i>
+                                </a>
+                                <a href="video/meizuEP52%20Lite耳机.mp4">
+                                    <img class="video_img_point" src="images/img/meizuEP52-Lite-gray-蓝牙耳机.jpg">
+                                </a>
+                                <p>魅族 EP52 Lite 蓝牙运动耳机</p>
+                            </dt>
+                        </dl>
+                    </li>
+                    <li class="video_li_line">
+                        <dl>
+                            <dt>
+                                <a>
+                                    <i class="video_player"></i>
+                                </a>
+                                <a href="video/note8-products.mp4">
+                                    <img class="video_img_point" src="images/img/meizuEP52-Lite-gray-蓝牙耳机.jpg">
+                                </a>
+                                <p>EP52 Lite </p>
+                            </dt>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 精彩视频End -->
+    </div>
+</div>
+</body>
+</html>
